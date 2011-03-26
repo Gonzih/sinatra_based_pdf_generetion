@@ -6,6 +6,10 @@ get '/pdf' do
   PDFKit.configure do |config|
     config.wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
     config.default_options = {
+      'margin-top' => 0,
+      'margin-bottop' => 0,
+      'margin-left' => 0,
+      'margin-right' => 0
     }
   end
   content_type 'application/pdf'
