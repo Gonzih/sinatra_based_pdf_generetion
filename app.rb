@@ -3,7 +3,7 @@ require 'bundler'
 Bundler.require :default
 
 PDFKit.configure do |config|
-  config.wkhtmltopdf = 'wkhtmltopdf'
+  config.wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
   config.default_options = {
     'margin-top' => 0,
     'margin-bottom' => 0,
