@@ -17,3 +17,7 @@ get '/pdf' do
   kit = PDFKit.new url
   kit.to_pdf
 end
+
+get '/' do
+  'O_o'
+end
